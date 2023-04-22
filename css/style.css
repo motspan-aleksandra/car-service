@@ -157,6 +157,18 @@ p {
     .logo__img {
         max-width: 142px;
     }
+
+    .advantages {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .advantage {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -166,6 +178,28 @@ p {
 
     .logo__img {
         max-width: 81px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .hero__subtitle {
+        font-size: 14px;
+    }
+
+    .hero__btns {
+        flex-wrap: wrap;
+        row-gap: 14px;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 12px;
     }
 }
 
@@ -179,8 +213,12 @@ p {
 
 .main {}
 
-.hero {
+.main__back {
     height: 100vh;
+}
+
+.hero {
+    height: calc(100vh - 75px);
     padding-top: 90px;
     color: #FFFFFF;
     display: flex;
@@ -188,7 +226,10 @@ p {
     padding-bottom: 50px;
 }
 
-.hero__main {}
+.hero__main {
+    flex: 1;
+    padding-left: 95px;
+}
 
 .title {
     font-family: 'Roboto';
@@ -270,6 +311,9 @@ p {
 .advantages {
     display: flex;
     justify-content: space-between;
+    column-gap: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .advantage {
@@ -303,6 +347,9 @@ p {
 
 
 @media (max-width: 960px) {
+    .container {
+        max-width: 898px;
+    }
 
     .title {
         font-size: 42px;
@@ -382,6 +429,7 @@ p {
     }
 
 }
+
 
 /*
 
