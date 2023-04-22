@@ -1,0 +1,408 @@
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul>li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.main__back {
+    background: url(../img/bg/bg.png) no-repeat left top/cover;
+
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    border: #FFFFFF 2px solid;
+}
+
+.container {
+    max-width: 1130px;
+    padding: 0px 5px;
+    margin: 0 auto;
+}
+
+.header .container {
+    max-width: 1359px;
+    display: flex;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1170px;
+    column-gap: 10px;
+    text-align: center;
+}
+
+.logo__link {
+    min-width: 81;
+    max-height: 187px;
+    display: block;
+    color: #FFFFFF;
+}
+
+.logo__img {}
+
+.nav {
+    display: flex;
+    column-gap: 36px;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.nav__item {}
+
+.nav_item.active {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.nav__link {
+    font-size: 16px;
+    line-height: 1.13;
+    color: #FFFFFF
+}
+
+.address {
+    color: #FFFFFF;
+    font-style: normal;
+}
+
+.header__contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.location,
+.tel {
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.13;
+    color: #FFF
+}
+
+@media (max-width: 988px) {
+    .container {
+        max-width: 898px;
+    }
+
+    .header .location {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 728px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header__contact {
+        display: none;
+    }
+
+    .logo__img {
+        max-width: 142px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 300px;
+    }
+
+    .logo__img {
+        max-width: 81px;
+    }
+}
+
+.address__img {}
+
+.address__desc {}
+
+.tel {
+    margin-left: 15px;
+}
+
+.main {}
+
+.hero {
+    height: 100vh;
+    padding-top: 90px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.hero__main {}
+
+.title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.17;
+}
+
+.hero__container {
+
+    height: 100vh;
+    display: flex;
+
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*
+
+.box .cat {
+    only for __cat IN box__
+}
+
+*/
+
+.hero .title {
+    margin-bottom: 17px;
+    max-width: 409px;
+}
+
+.hero__subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 50px;
+}
+
+.hero__text {}
+
+.hero__buttons {
+    display: flex;
+    column-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: none;
+    border-radius: 4px;
+    text-align: center;
+    min-width: 170px;
+    padding: 12px 16px;
+}
+
+/*
+--modificator--
+Сущность, определяющая внешний вид, состояние или поведение блока либо элемента
+
+Типы:
+- булевый
+- ключ-значение (когда важно значение модификатора)
+ */
+
+.btn.btn_theme_white {
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+
+}
+
+.hero__call-to-action span {
+    color: #ED7173;
+}
+
+.hero__discount {}
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantage {
+    text-align: center;
+    border-radius: 4px;
+    padding: 16px 10px;
+}
+
+/*
+.afdgsdgs {
+    flex: 0 (do not grow) 1 (can shrink) 256 (width)
+}
+*/
+
+.hero__advantage {
+    border: 2px solid #FFFFFF;
+    flex: 0 1 276px;
+
+}
+
+.advantage__img {
+    margin-bottom: 14px;
+}
+
+.hero__advantage .advantage__img {
+    height: 30px;
+    width: 30px;
+}
+
+.advantage__desc {}
+
+
+@media (max-width: 960px) {
+
+    .title {
+        font-size: 42px;
+    }
+
+    .hero__title {}
+
+    .hero_subtitle {
+        font-size: 22px;
+    }
+
+    .hero__container {
+        /*
+        height: 100vh;*/
+        display: flex;
+        /*
+        flex: 1;*/
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /*
+    
+    .box .cat {
+        only for __cat IN box__
+    }
+    
+    */
+
+    .hero .title {
+        margin-bottom: 17px;
+        max-width: 409px;
+    }
+
+    .hero__subtitle {
+        font-size: 22px;
+        margin-bottom: 70px;
+    }
+
+    .hero__text {}
+
+    .hero__buttons {
+        display: flex;
+        column-gap: 20px;
+    }
+
+    /*
+    --modificator--
+    Сущность, определяющая внешний вид, состояние или поведение блока либо элемента
+    
+    Типы:
+    - булевый
+    - ключ-значение (когда важно значение модификатора)
+     */
+
+    .btn.btn_theme_white {
+        border: 2px solid #FFFFFF;
+        color: #FFFFFF;
+
+    }
+
+    .hero__call-to-action span {
+        color: #ED7173;
+    }
+
+    .hero__discount {}
+
+    .advantages {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .advantage {
+        text-align: center;
+        border-radius: 4px;
+        padding: 16px 10px;
+    }
+
+}
+
+/*
+
+.primer {
+    height: 100vh;
+    background-color: #ED7173;
+}
+
+.block1 {
+    background-color: aqua;
+}
+
+.block2 {
+    background-color: bisque;
+}
+
+*/
+
+/*
+_TIMESTAMP_
+
+flex explanation with primer: around 11:56 (1h 56min)
+
+*/
